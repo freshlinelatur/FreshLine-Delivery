@@ -5,7 +5,7 @@ const SplashScreen = ({ navigation }) => {
   useEffect(() => {
     setTimeout(() => {
       navigation.navigate("Login");
-    }, 3000); // Navigate to Login screen after 2 seconds
+    }, 3000); // Navigate to Login screen after 3 seconds
   }, []);
 
   return (
@@ -24,8 +24,9 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    // backgroundColor: "#FFD700",
-    backgroundColor: "#3498db", // Background color for the splash screen
+    backgroundColor: "#F5F5F5",
+    backgroundColor: "black",
+    // Change the background color to a faint and attractive color
   },
   logo: {
     width: 200, // Adjust the width and height according to your logo dimensions

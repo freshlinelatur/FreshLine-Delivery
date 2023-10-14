@@ -71,7 +71,8 @@ const LoginScreen = ({ navigation }) => {
         <Text style={styles.countryCode}>+91</Text>
         <TextInput
           style={styles.mobileNumberInput}
-          placeholder="Mobile Number"
+          placeholder="Enter your mobile number"
+          placeholderTextColor="#ccc" // Placeholder text color
           keyboardType="numeric"
           maxLength={10}
           value={mobileNumber}
@@ -98,6 +99,7 @@ const LoginScreen = ({ navigation }) => {
                 key={index}
                 style={styles.otpInput}
                 placeholder="0"
+                placeholderTextColor="#ccc" // Placeholder text color
                 keyboardType="numeric"
                 maxLength={1}
                 value={digit}
@@ -132,7 +134,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "#fff",
+    backgroundColor: "#000", // Black background
     paddingHorizontal: 20,
   },
   logo: {
@@ -144,6 +146,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 20,
+    color: "#fff", // White text
   },
   mobileNumberContainer: {
     flexDirection: "row",
@@ -159,6 +162,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: "bold",
     marginRight: 5,
+    color: "#fff", // White text
   },
   mobileNumberInput: {
     flex: 1,
@@ -167,6 +171,7 @@ const styles = StyleSheet.create({
     borderColor: "#ccc",
     borderRadius: 5,
     paddingHorizontal: 10,
+    color: "#fff", // White text
   },
   button: {
     width: "100%",
@@ -196,7 +201,6 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     paddingTop: 10,
     paddingBottom: 10,
-    // margin: 10,
   },
   otpInput: {
     flex: 1,
@@ -207,6 +211,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     textAlign: "center",
     marginRight: 5,
+    color: "#fff", // White text
   },
   resendContainer: {
     alignSelf: "flex-end",
@@ -216,7 +221,6 @@ const styles = StyleSheet.create({
   resendText: {
     color: "#007bff",
     fontWeight: "bold",
-    // textDecorationLine: "underline",
   },
 });
 

@@ -107,7 +107,7 @@ const HomeScreen = ({ navigation }) => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <HomeHeader />
+      <HomeHeader navigation={navigation} />
       <View style={styles.content}>
         <TouchableOpacity
           style={[

@@ -12,7 +12,7 @@ const HomeHeader = ({ navigation }) => {
   const handleNotificationPress = () => {
     // Handle notification icon press
     // You can add code here to navigate to the notification screen or show notifications
-    console.log("Redirecting to notification screen....");
+    navigation.navigate("Notification");
   };
 
   return (
