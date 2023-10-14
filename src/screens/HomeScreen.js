@@ -10,7 +10,7 @@ import {
 } from "react-native";
 import HomeHeader from "../components/HomeHeader";
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {
   const [isOnline, setIsOnline] = useState(false);
   const [orders, setOrders] = useState([
     {
@@ -57,6 +57,7 @@ const HomeScreen = () => {
   };
 
   const handleTrackOrder = () => {
+    navigation.navigate("Track");
     // Handle tracking the order here
     // You can navigate to the tracking screen
   };

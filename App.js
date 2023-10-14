@@ -6,6 +6,7 @@ import LoginScreen from "./src/screens/LoginScreen";
 import TabNavigator from "./src/navigation/TabNavigation";
 import UserDetailScreen from "./src/screens/UserDetailScreen";
 import UpdateProfileScreen from "./src/screens/UpdateProfileScreen";
+import TrackScreen from "./src/screens/TrackScreen";
 
 const Stack = createStackNavigator();
 
@@ -31,6 +32,11 @@ const App = () => {
         <Stack.Screen
           name="UpdateProfile"
           component={UpdateProfileScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Track"
+          component={TrackScreen}
           options={{ headerShown: false }}
         />
         <Stack.Screen
